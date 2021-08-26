@@ -1,0 +1,36 @@
+GET - retrieve all records or only one record
+
+localhost:8080/api/recipes
+localhost:8080/api/crud/recipes
+localhost:8080/api/crud/recipes/16
+localhost:8080/api/crud/recipes/search?name=chocolate%20cake
+localhost:8080/api/crud/recipes/search?name=pumpkin%20pie
+localhost:8080/api/crud/ingredients
+localhost:8080/api/crud/servingsize
+
+------------------------------------------------------------
+POST - create new record
+
+localhost:8080/api/crud/recipes
+
+{
+    "recipeName": "Pumpkin pie",
+    "imageUrl": "assets/images/recipes/pumpkin_pie.png"
+}
+
+------------------------------------------------------------
+PULL - update existing record
+
+localhost:8080/api/crud/recipes/40
+
+{
+    "recipeID": 40,
+    "recipeName": "ahhhhhh",
+    "imageUrl": "assets/images/recipes/pumpkin_pie.png"
+}
+
+------------------------------------------------------------
+DELETE
+
+localhost:8080/api/crud/recipes/40
+
